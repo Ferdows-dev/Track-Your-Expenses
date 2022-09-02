@@ -1,0 +1,17 @@
+.half-width {
+    height: 570px;
+    background: #222436;
+    padding: 30px;
+    text-align: center;
+}
+
+.background-color {
+    color: antiquewhite;
+}
+
+.totalexpense-balance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

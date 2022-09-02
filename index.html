@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <p class="h1 text-center">Money Tracker</p>
+    </div>
+    <div class="row mb-2 p-2">
+        <div class="col-md-6">
+            <div class="half-width">
+                <img class="img-thumbnail" src="Image/money.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="half-width">
+                <p class="h4 background-color">Income</p>
+                <div class="row  justify-content-center mt-3 g-0">
+                    <div class="col: width of 15%">
+                        <p class="h5 background-color">Income :</p>
+                    </div>
+                    <div class="col-6 col: width of 25%">
+                        <input id="income-input" class="input-sm" type="number">
+                    </div>
+                </div>
+                <p class="h4 background-color mt-2">Expenses</p>
+                <div class="row  justify-content-center mt-2">
+                    <div class="col: width of 15%  g-0">
+                        <p class="h5 background-color fs-6">Food :</p>
+                    </div>
+                    <div class="col-6 g-0 col: width of 25%">
+                        <input id="food-cost-input" class="input-sm" type="number">
+                    </div>
+
+
+                </div>
+                <div class="row  justify-content-center mt-2">
+                    <div class="col: width of 15%  g-0">
+                        <p class="h5 background-color fs-6">Rent :</p>
+                    </div>
+                    <div class="col-6 g-0 col: width of 25%">
+                        <input id="rent-cost-input" class="input-sm" type="number">
+                    </div>
+
+
+                </div>
+                <div class="row  justify-content-center mt-2">
+                    <div class="col: width of 15%  g-0">
+                        <p class="h5 background-color fs-6">Cloth :</p>
+                    </div>
+                    <div class="col-6 g-0 col: width of 25%">
+                        <input id="cloth-cost-input" class="input-sm" type="number">
+                    </div>
+
+                </div>
+                <div class="mt-2">
+                    <button type="button" onClick="calculateExpenses()" class="btn btn-primary">Calculate</button>
+                </div>
+                <div class="row justify-content-center mt-2">
+                    <div class="col-md-12">
+                        <p class="fs-5 background-color totalexpense-balance">Total Expenses: <span
+                                id="total-expense">00</span></p>
+                        <p class="fs-5 background-color totalexpense-balance">Balance: <span
+                                id="total-balance">00</span></p>
+
+
+                    </div>
+                </div>
+                <div class="row  justify-content-center align-items-center mt-3 g-0 ">
+                    <div class="col-sm-2 g-0">
+
+                        <p class="h5 background-color">Save :</p>
+                    </div>
+                    <div class="col-xs-2 g-0">
+                        <input class="form-control" id="save-amount-input" type="number">
+
+                    </div>
+                    <div class="col-sm-1">
+                        <p class="background-color mt-2">%</p>
+                    </div>
+                    <div class="col-sm-2 g-0">
+                        <button id="saving-amount-button" type="button" class="btn btn-primary">Save</button>
+                    </div>
+
+
+
+                </div>
+                <div class="row justify-content-center mt-2">
+                    <div class="col-md-12">
+                        <p class="fs-5 background-color totalexpense-balance">Saving amount: <span
+                                id="saving-amount">00</span></p>
+                        <p class="fs-5 background-color totalexpense-balance">Remaining balance: <span
+                                id="remaining-balance">00</span></p>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="Js/calcuate-expense.js"></script>
+
+</body>
+
+</html>
